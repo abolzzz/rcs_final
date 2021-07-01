@@ -21,8 +21,7 @@ session_start();
 //logout
 
 if(isset($_POST['logout'])){
-    $_SESSION['email'] == false;
-    
+       
     unset($_SESSION["email"]);
     header("location:login.php");
     session_destroy();
