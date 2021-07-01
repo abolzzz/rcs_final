@@ -21,7 +21,7 @@
             if(password_verify($password, $row['password'])){
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['email'] = $row['email'];
-                $_SESSION['user_id'] = $row['user_id'] == true;
+                $_SESSION['user_id'] = $row['user_id'];
                 header('refresh:1, profile.php');
                 $success = '
                     <div class="alert alert-success" role="alert">
